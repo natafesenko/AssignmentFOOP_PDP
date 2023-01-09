@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author natali
- *
- */
-module MortgageCalculator {
-}

@@ -30,10 +30,10 @@ You can always get the latest version of Calculator from this repository.
 
 ### Features
 
-- [ ] It's using Imperial BMI formula for calculation
+- [ ] 
 
-- [ ] BMI weight categories as a result
+- [ ] 
 
-- [ ] Conversion between int and double of measurement.
+- [ ] 
 
 ### How to build and run
