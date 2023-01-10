@@ -3,26 +3,21 @@ import java.util.Scanner;
 import java.util.InputMismatchException; 
 
 public class MortgageCalculator {
-	static double monthlyInterestRate;
-	static double mortgage;
 
 	public static void main(String[] args) {
 		double loanAmount;
 		double annualInterestRate;
 		double numberOfYears;
-		double mortgage;
 
-		
 		// TODO Auto-generated method stub
 		welcomeMessage();
 		Scanner in = new Scanner(System.in);
 		loanAmount = UserInput(in, "Enter the loan amount: ");
 		annualInterestRate = UserInput(in, "Enter the annual interest rate (e.g., 7.25): ");
 		numberOfYears = UserInput(in, "Enter the number of years: ");
-		mortgage = calculateMortgage(loanAmount, annualInterestRate, numberOfYears);
-		System.out.println("The mortgage is $" + mortgage);
-		
-		
+		double mortgage = calculateMortgage(loanAmount, annualInterestRate, numberOfYears);
+		System.out.println("The mortgage is $" + mortgage);	
+		System.out.println("Thank you for use my mortgage calculator!");	
 	}
 	
 	public static void welcomeMessage() {
@@ -37,7 +32,6 @@ public class MortgageCalculator {
 				+ "█▄███▄██▄▄██▄█▄▄██▄██▄▄▄▄█▄██▄█▄▄▄▄█▄▄▄████▄██▄██▄█▄▄██▄███▄▄▄█▄▄█▄██▄██▄███▄▄██▄█▄▄\n"
 				+ "▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n"
 				+ "");
-		
 	}
 	
 	public static double UserInput(Scanner in, String question) {
@@ -70,7 +64,6 @@ public class MortgageCalculator {
 		// Calculate the monthly interest rate
 		// monthlyInterestRate = annualInterestRate / 1200;
 		return annualInterestRate / 1200;
-		
 	}
 	
 	public static double calculateMortgage(double loanAmount, double monthlyInterestRate, double numberOfYears) {
@@ -79,21 +72,4 @@ public class MortgageCalculator {
 	    //  (1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12)));
 		return loanAmount * monthlyInterestRate / (1 - (1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12)));
 	}
-	//
-	//public static void CastingBmi(Scanner in, double bmi)  {
-	//	System.out.println("Round your BMI? If answer yes, you should write 1, if no - 0");  
-	//	// Casting int to double
-	 //   int question = in.nextInt();
-	 //   // ask user how value show for him
-	//    if (question == 1) {
-	//	      int intBmi = (int) bmi;
-	//	      System.out.println("Your BMI is " + intBmi);
-	//	      return;
-	  //  }
-	//    if(question == 0) {
-	//      System.out.println("Your BMI is " + bmi);
-	 //   }
-	  //  return;
-	//}
-
 }
