@@ -3,16 +3,16 @@ import java.util.Scanner;
 import java.util.InputMismatchException; 
 
 public class MortgageCalculator {
-	
-	static double loanAmount;
-	static double annualInterestRate;
-	static double numberOfYears;
 	static double monthlyInterestRate;
 	static double mortgage;
-	static double calculateMortgage;
-	
 
 	public static void main(String[] args) {
+		double loanAmount;
+		double annualInterestRate;
+		double numberOfYears;
+		double mortgage;
+
+		
 		// TODO Auto-generated method stub
 		welcomeMessage();
 		Scanner in = new Scanner(System.in);
@@ -69,16 +69,15 @@ public class MortgageCalculator {
 	public static double monthlyInterestRate(double annualInterestRate) {
 		// Calculate the monthly interest rate
 		// monthlyInterestRate = annualInterestRate / 1200;
-		return monthlyInterestRate = annualInterestRate / 1200;
+		return annualInterestRate / 1200;
 		
 	}
 	
-	public static double calculateMortgage(double loanAmount, double hmonthlyInterestRate, double numberOfYears) {
+	public static double calculateMortgage(double loanAmount, double monthlyInterestRate, double numberOfYears) {
 		// Calculate the mortgage
 		// mortgage = loanAmount * monthlyInterestRate / (1 -
 	    //  (1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12)));
-		return mortgage = loanAmount * monthlyInterestRate / (1 -
-			      (1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12)));
+		return loanAmount * monthlyInterestRate / (1 - (1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12)));
 	}
 	//
 	//public static void CastingBmi(Scanner in, double bmi)  {
