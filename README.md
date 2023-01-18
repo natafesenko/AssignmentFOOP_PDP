@@ -1,25 +1,25 @@
 # AssignmentFOOP_PDP
 
 
-- [+] Cover Page
+- [ *] Cover Page
 
-- [+] Introduction
+- [ *] Introduction
 
-- [+] Algorithm – Pseudocode & Flowchart
+- [ *] Algorithm – Pseudocode & Flowchart
 
-- [ ] Data Dictionary
+- [ *] Data Dictionary
 
-- [+] Entire Programming Code with Commenting and Prudent Printing printed from Eclipse
+- [ *] Entire Programming Code with Commenting and Prudent Printing printed from Eclipse
 
-- [+] Screen Printout of working program, showing font style change
+- [ *] Screen Printout of working program, showing font style change
 
-- [ ] Testing Documented
+- [ *] Testing Documented
 
-- [ ] Testing Printouts
+- [ *] Testing Printouts
 
-- [ ] Conclusion
+- [ *] Conclusion
 
-- [ ] Bibliography 
+- [ *] Bibliography 
 
 # Introduction
 
@@ -85,9 +85,9 @@ STOP 
 
 ### Features
 
-- [+] Its using a simple formula
+- [ * ] Its using a simple formula
 
-- [+] It's can using each one
+- [ * ] It's can using each one
 
 ### How to build and run
 
