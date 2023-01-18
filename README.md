@@ -87,7 +87,7 @@ STOP 
 
 - [ * ] Its using a simple formula
 
-- [ * ] It's can using each one
+[*] It's can using each one
 
 ### How to build and run
 
